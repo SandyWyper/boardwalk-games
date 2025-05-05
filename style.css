@@ -1,7 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&display=swap");
 
+:root {
+  --primary-font: "Macondo", cursive;
+  --secondary-font: "Inter", sans-serif;
+  --primary-color: #2c48d5;
+  --secondary-color: #aa9581;
+  --highlight-color: #416a8e;
+  --light-highlight-color: #7a9fc2;
+}
+
 * {
-  font-family: "Inter", sans-serif;
+  font-family: var(--secondary-font);
 }
 
 .nav-bar {
@@ -9,12 +18,17 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #2cd540;
-  font-family: "Macondo", cursive;
+  background-color: var(--primary-color);
+  font-family: var(--primary-font);
+  color: white;
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Macondo", cursive;
+  font-family: var(--primary-font);
+}
+
+.sub-heading-color {
+  color: var(--highlight-color);
 }
