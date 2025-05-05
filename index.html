@@ -48,64 +48,96 @@
     ></script>
   </head>
   <body class="d-flex flex-column min-vh-100">
-
-      <nav class="nav-bar">Nav <i class="fa-solid fa-bars"></i></nav>
-
-      <header class="container">
-        <div class="row">
-          <div class="col-12 col-xl-6">  
-            <h1>Boardwalk Games</h1>
-            <h2>Your gaming destination</h2>
-            <p class="sub-heading-color">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-                quos.
-            </p>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="game-library.html">Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
+
+    <header class="container">
+      <div class="row">
         <div class="col-12 col-xl-6">
-           carousel
+          <h1>Boardwalk Games</h1>
+          <h2>Your gaming destination</h2>
+          <p class="sub-heading-color">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            quos.
+          </p>
         </div>
-      </header>
-      <main>
-        <!-- services section -->
-      <section class="container">
+        <div class="col-12 col-xl-6">carousel</div>
+      </div>
+    </header>
+    <main>
+      <!-- services section -->
+      <section class="container" id="services">
         <div class="row">
-            <div class="col-12 ">
-                <h2>Services</h2>
-            </div>
-            <div class="col-12 col-md-6 col-xl-3">Services Card 1</div>
-            <div class="col-12 col-md-6 col-xl-3">Services Card 2</div>
-            <div class="col-12 col-md-6 col-xl-3">Services Card 3</div>
-            <div class="col-12 col-md-6 col-xl-3">Services Card 4</div>
+          <div class="col-12">
+            <h2>Services</h2>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3">Services Card 1</div>
+          <div class="col-12 col-md-6 col-xl-3">Services Card 2</div>
+          <div class="col-12 col-md-6 col-xl-3">Services Card 3</div>
+          <div class="col-12 col-md-6 col-xl-3">Services Card 4</div>
         </div>
       </section>
       <!-- join events section -->
       <section class="container">
         <div class="row">
-            <div class="col-12">
-                <h2>Join Our Events</h2>
-            </div>
-            <div class="col-12 col-md-6 col-xl-3">Event Card 1</div>
-            <div class="col-12 col-md-6 col-xl-3">Event Card 2</div>
-            <div class="col-12 col-md-6 col-xl-3">Event Card 3</div>
-            <div class="col-12 col-md-6 col-xl-3">Event Card 4</div>
+          <div class="col-12">
+            <h2>Join Our Events</h2>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3">Event Card 1</div>
+          <div class="col-12 col-md-6 col-xl-3">Event Card 2</div>
+          <div class="col-12 col-md-6 col-xl-3">Event Card 3</div>
+          <div class="col-12 col-md-6 col-xl-3">Event Card 4</div>
         </div>
-
       </section>
     </main>
 
-    <footer class="mt-auto">
+    <footer class="mt-auto" id="contact">
       <!-- Footer content will go here -->
       <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12">
-                <h2>Contact section heading</h2>
-            </div>
-                <!-- contact info -->
-                 <div class="col-12 col-md-6 col-xl-4">Contact info & social media links</div>
-                 <!-- opening hours -->
-                 <div class="col-12 col-md-6 col-xl-4">Opening hours</div>
-                 <!-- newsletter signup -->
-                 <!-- <div class="col-12 col-md-6 col-xl-4">Newsletter signup</div> -->
+          <div class="col-12">
+            <h2>Contact section heading</h2>
+          </div>
+          <!-- contact info -->
+          <div class="col-12 col-md-6 col-xl-4">
+            Contact info & social media links
+          </div>
+          <!-- opening hours -->
+          <div class="col-12 col-md-6 col-xl-4">Opening hours</div>
+          <!-- newsletter signup -->
+          <!-- <div class="col-12 col-md-6 col-xl-4">Newsletter signup</div> -->
         </div>
       </div>
     </footer>
