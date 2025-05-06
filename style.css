@@ -141,9 +141,17 @@ h3 {
   background-color: var(--highlight-color);
   color: white;
   padding: 6px 1rem;
-
   margin: 0 auto;
   width: fit-content;
+}
+/* stop the table from overflow on tiny mobile */
+#events table {
+  font-size: 0.7rem;
+}
+@media screen and (min-width: 375px) {
+  #events table {
+    font-size: 1rem;
+  }
 }
 
 /* Media queries */
