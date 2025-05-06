@@ -27,21 +27,24 @@ h1,
 h2,
 h3 {
   font-family: var(--primary-font);
+  text-transform: uppercase;
 }
 
 .sub-heading-color {
   color: var(--highlight-color);
 }
-
-/* .container {
-  border: 1px solid black;
+.section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
-.col-12 {
-  border: 2px solid white;
-  background-color: lightgray;
-} */
 
 /* navbar */
 #navbar {
   background-color: var(--primary-color);
+}
+
+/* header */
+
+#header .lead {
+  font-family: var(--secondary-font);
 }
