@@ -9,7 +9,7 @@
   --highlight-color: #416a8e; /* blue */
   --highlight-color-light: #7a9fc2; /* light blue */
 }
-
+/* Global styles */
 * {
   font-family: var(--secondary-font);
 }
@@ -28,6 +28,7 @@ h1,
 h2,
 h3 {
   font-family: var(--primary-font);
+  color: var(--primary-color);
   text-transform: uppercase;
 }
 
