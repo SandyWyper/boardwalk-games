@@ -2,8 +2,8 @@
 
 /* CSS Variables */
 :root {
-  --primary-font: "Inter", sans-serif;
-  --secondary-font: "Macondo", cursive;
+  --primary-font: "Macondo", cursive;
+  --secondary-font: "Inter", sans-serif;
   --primary-color: #3a2620; /* dark brown */
   --secondary-color: #aa9581; /* light brown */
   --highlight-color: #416a8e; /* blue */
