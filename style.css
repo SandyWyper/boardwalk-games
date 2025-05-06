@@ -40,3 +40,8 @@ h3 {
   border: 2px solid white;
   background-color: lightgray;
 } */
+
+/* navbar */
+#navbar {
+  background-color: var(--primary-color);
+}
