@@ -85,6 +85,9 @@ h3 {
   background-color: var(--highlight-color);
   color: white;
 }
+.indent {
+  margin-left: 30px;
+}
 body {
   padding-top: 58px;
 }
