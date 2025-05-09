@@ -212,3 +212,47 @@ body {
     min-height: 195px;
   }
 }
+
+/* Testimonials section */
+#testimonials .owl-carousel {
+  padding: 1rem 0;
+  position: relative;
+}
+
+#testimonials .card {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  margin-bottom: 1.5rem;
+}
+
+#testimonials .card-body {
+  padding: 0.75rem;
+}
+
+#testimonials .text-warning {
+  color: #ffc107 !important;
+}
+
+#testimonials .owl-nav button:hover {
+  background-color: var(--highlight-color-light) !important;
+}
+
+#testimonials .owl-nav button.owl-prev {
+  left: -20px;
+}
+
+#testimonials .owl-nav button.owl-next {
+  right: -20px;
+}
+
+/* Hide Owl Carousel dots */
+#testimonials .owl-dots {
+  display: none;
+}
+
+/* Custom column width for xl screens */
+@media (min-width: 1200px) {
+  .col-xl-2-4 {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+}
