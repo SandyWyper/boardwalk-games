@@ -45,6 +45,12 @@
       src="https://kit.fontawesome.com/4769624f46.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="d-flex flex-column min-vh-100">
     <!-- Navigation -->
@@ -352,6 +358,115 @@
           </div>
         </div>
       </section>
+      <!-- Reservation Form Section -->
+      <section id="reserve-game" class="container section">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h2 class="display-6">RESERVE A GAME</h2>
+          </div>
+          <div class="col-12 col-md-10 col-lg-10 col-xl-8">
+            <p class="mb-4">
+              Reserve a board game for your next visit to Boardwalk Games. Pick
+              your challenge, and let the adventure begin! Fill out your details
+              and preferred game below, and we'll have it set aside for you when
+              you arrive.
+            </p>
+            <form action="/success.html" novalidate>
+              <div class="row g-3">
+                <div class="col-12 col-md-4">
+                  <label for="fullName" class="form-label">Full name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fullName"
+                    name="fullName"
+                    aria-label="Full name"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please enter your full name.
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <label for="phoneNumber" class="form-label"
+                    >Phone number</label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    aria-label="Phone number"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please enter your phone number.
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <label for="emailAddress" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="emailAddress"
+                    name="emailAddress"
+                    aria-label="Email address"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please enter a valid email address.
+                  </div>
+                </div>
+                <div class="col-12 col-md-8">
+                  <label for="selectGame" class="form-label">Select game</label>
+                  <select
+                    class="form-select"
+                    id="selectGame"
+                    name="selectGame"
+                    aria-label="Select game"
+                    required
+                  >
+                    <option selected disabled value="">Select game</option>
+                    <option>Galaxy Pioneers</option>
+                    <option>Mystic Woods</option>
+                    <option>Captain's Gambit</option>
+                    <option>Critter Quest</option>
+                    <option>Settlers of Catan</option>
+                    <option>Monopoly</option>
+                    <option>Exploding Kittens</option>
+                    <option>Cluedo</option>
+                  </select>
+                  <div class="invalid-feedback">Please select a game.</div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <label for="requestedDate" class="form-label"
+                    >Requested date</label
+                  >
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="requestedDate"
+                    name="requestedDate"
+                    aria-label="Requested date"
+                    required
+                  />
+                  <div class="invalid-feedback">Please select a date.</div>
+                </div>
+                <div class="col-12 text-center">
+                  <button
+                    type="submit"
+                    class="btn custom-button-outline mt-2 ms-auto d-block"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer / contact section -->
@@ -452,5 +567,25 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <script>
+      // Bootstrap validation
+      (() => {
+        "use strict";
+        const forms = document.querySelectorAll("form");
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
   </body>
 </html>
