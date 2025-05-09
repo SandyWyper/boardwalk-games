@@ -281,7 +281,7 @@
       <!-- Events section -->
       <section id="events" class="container section">
         <div class="row">
-          <div class="col-12 text-center my-4">
+          <div class="col-12 text-center mb-4">
             <h2 class="display-6">Join our events</h2>
           </div>
           <div class="col-12 col-lg-6">
@@ -438,5 +438,27 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
+    <script>
+      document
+        .querySelectorAll(".navbar-collapse .nav-link")
+        .forEach((link) => {
+          link.addEventListener("click", function (e) {
+            let section = document.querySelector(e.target.getAttribute("href"));
+            if (section) {
+              e.preventDefault(); // Prevent default anchor click behavior
+              let navbarHeight =
+                document.querySelector(".navbar-toggler").offsetHeight;
+              window.scroll({
+                top: section.offsetTop - navbarHeight, // Adjust for navbar height
+                behavior: "smooth",
+              });
+              document
+                .querySelector(".navbar-collapse")
+                .classList.remove("show"); // Collapse navbar
+            }
+          });
+        });
+    </script>
   </body>
 </html>

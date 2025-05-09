@@ -44,7 +44,7 @@ h3 {
   color: var(--highlight-color);
 }
 .section {
-  margin-top: 2rem;
+  padding-top: 4rem;
   margin-bottom: 2rem;
 }
 
