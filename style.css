@@ -145,6 +145,7 @@ body {
   color: var(--secondary-color);
   font-size: 1.2rem;
   margin-right: 15px;
+  width: 13px;
 }
 
 #contact .social-links i {
